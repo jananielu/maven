@@ -33,6 +33,11 @@ public class AdactExecutable extends BaseClass {
 		ConformationPage c = new ConformationPage();
 		System.out.println("FirstName:"+getvalue(c.getFirsname()));
 		System.out.println("Address:"+getvalue(c.getAdd()));
+		
+		System.out.println("lastName:"+getvalue(c.getHname()));
+		System.out.println("CreditNumber:"+getvalue(c.getAdd()));
+
+
 		launch("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		LoginPage l = new LoginPage();
@@ -41,6 +46,8 @@ public class AdactExecutable extends BaseClass {
 	
 
 		
+		
+
 
 		
 	}
