@@ -1,5 +1,7 @@
 package org.adacting;
 
+import org.read.LoginPage;
+
 public class AdactExecutable extends BaseClass {
 	public static void main(String[] args) {
 		launch ("https://adactin.com/HotelApp/");
@@ -31,6 +33,13 @@ public class AdactExecutable extends BaseClass {
 		ConformationPage c = new ConformationPage();
 		System.out.println("FirstName:"+getvalue(c.getFirsname()));
 		System.out.println("Address:"+getvalue(c.getAdd()));
+		launch("https://www.facebook.com/");
+		driver.manage().window().maximize();
+		LoginPage l = new LoginPage();
+		fill(l.getUser(),"jananielumalai@gmail.com");
+		fill(l.getPass(),"123456");
+	
+
 		
 
 		
